@@ -65,7 +65,7 @@ Using the HTML sections is easier to use, but using the returned datasets is a m
 
 Ajax gives you much more flexibility, but makes your client side javascript more complicated. As it moves some of the logic from the serverside to the client side.
 
-> Good news : you can use handlebars templating on the client side
+> Good news : you can use handlebars templating on the client side. 
 > See some details here: http://handlebarsjs.com/
 
 ## Try this using Ajax:

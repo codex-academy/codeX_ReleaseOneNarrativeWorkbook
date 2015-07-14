@@ -70,8 +70,8 @@ Ajax gives you much more flexibility, but makes your client side javascript more
 Let's add and interactive search bar to your Products screen.
 
 The search bar should:
-    * start searching after you typed 3 characters
-    * only display the products that match the search
-    * the search should match both Product and Category names
-    * if the search bar is empty all products should be displayed
+  * start searching after you typed 3 characters
+  * only display the products that match the search
+  * the search should match both Product and Category names
+  * if the search bar is empty all products should be displayed
   

@@ -22,10 +22,16 @@ Here are some [background information](NodeBackground.md) about some Node JS con
 
 Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progress through by checking how many of the unit tests are passing.
 
-##How to:
+##Get going on the Nelisa Stories
 
-* [Create online reports](./CreateOnlineReports.md)
-* [Data modelling & persistence](./DataModellingAndPersistence.md)
+Now you're ready to get going on the Stories for Nelisa's Spaza Shop.
+Find the stories on the [Nelisa Spaza Shop Narrative](https://github.com/codex-academy/NelisaSpazaShopNarrative/wiki) Wiki
+
+##How to:
+These guides will help you once you get info online and start using the database.
+
+* [How to get Nelisa's data onto a web page](./CreateOnlineReports.md)
+* [How to get Nelisa's data into a database](./DataModellingAndPersistence.md)
 * [Deployment](./Deployment.md) 
 * [Capture and store data](./StoringData.md)
 * [Create a web app that support different user roles](./LoginAndUserRoles.md)

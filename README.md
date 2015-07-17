@@ -22,7 +22,7 @@ Here are some [background information](NodeBackground.md) about some Node JS con
 
 Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progress through by checking how many of the unit tests are passing.
 
-##Get going on helping Nelisa understand her information
+##Get going on Nelisa's requests
 Now you're ready to get going on the stories for Nelisa's Spaza Shop.
 
 You'll find the stories on the [Nelisa Spaza Shop Narrative](https://github.com/codex-academy/NelisaSpazaShopNarrative/wiki) Wiki

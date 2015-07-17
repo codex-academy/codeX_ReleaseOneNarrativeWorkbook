@@ -22,10 +22,10 @@ Here are some [background information](NodeBackground.md) about some Node JS con
 
 Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progress through by checking how many of the unit tests are passing.
 
-##Get going on the Nelisa Stories
+##Get going on helping Nelisa understand her information
+Now you're ready to get going on the stories for Nelisa's Spaza Shop.
 
-Now you're ready to get going on the Stories for Nelisa's Spaza Shop.
-Find the stories on the [Nelisa Spaza Shop Narrative](https://github.com/codex-academy/NelisaSpazaShopNarrative/wiki) Wiki
+You'll find the stories on the [Nelisa Spaza Shop Narrative](https://github.com/codex-academy/NelisaSpazaShopNarrative/wiki) Wiki
 
 ##How to:
 These guides will help you once you get info online and start using the database.

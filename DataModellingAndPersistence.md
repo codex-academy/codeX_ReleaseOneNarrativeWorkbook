@@ -132,8 +132,8 @@ Now that you have a database that contains the data from the CSV file we have a 
    * Populate the Sales table:
      * Use the ```sales_csv``` table joined with the ```Products``` table to insert the correct foreign keys into the Sales table
      * Use a insert statement with a select statement - http://stackoverflow.com/questions/5391344/insert-with-select
-     * Join the ```sales_csv``` and the ```Products``` table on the product name column to get the product id to use as the foreign key in the Products table. 
-   *  Populate the Sales & Supplier tables
+     * Join the ```sales_csv``` and the ```Products``` table on the product name column to get the product id to use as the foreign key. 
+   *  Populate the Purchase & Supplier tables
      * Populate the Supplier tables from the data in the ```stock_purchases_csv``` table - use the select insert method described above. Using ```select distict``` will help you to get a unique list of suppliers.
      * Join the Products and the Suppliers tables using the Product and Supplier Names to get the appropriate foreign keys. 
 

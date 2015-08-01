@@ -38,3 +38,8 @@ These guides will help you once you get info online and start using the database
 * [Create a more Interactive website](./MoreInterActive.md)
 * [Create an API](./CreateAPI.md)
 
+## Good online books about Javascript:
+
+http://chimera.labs.oreilly.com/books/1234000000262/index.html
+http://addyosmani.com/resources/essentialjsdesignpatterns/book/
+

@@ -8,7 +8,7 @@ You should already have it installed on your laptop if you completed the codeX F
 
 The installation instructions are as follows:
 
-* ```sudo apt-get install node-legacy``` 
+* ```sudo apt-get install node-legacy```
 * ```sudo apt-get install npm```
 
 Open a terminal window:
@@ -16,27 +16,26 @@ Open a terminal window:
 * type ```nodejs``` and press enter - you should now be in a Node JS console - you should get no errors. (on a non Ubuntu machine the command is called ```node```). Use ctrl-C to get out of it
 * type ```npm``` you should see some information about npm on the console
 
-Now you are ready to use Javascript from the command line. 
+Now you are ready to use JavaScript from the command line.
 
 ##Node JS Javascript from the command line
 
-Let's run a simple javascript script from the command line:
+Let's run a simple JavaScript script from the command line:
 
-	* Create a file called 'hello.js' 
+	* Create a file called 'hello.js'
 	* copy this text into the file: 'console.log('hello world!');'
 	* Save the file
 	* now run it using 'nodejs hello.js'
 	* what happens?
 
-So what just happend? You liberated your Javascript knowledge from the command line. 
+So what just happend? You liberated your JavaScript knowledge from the command line.
 
-Now proof this to yourself and write some Javascript that use:
+Now prove this to yourself and write some JavaScript that uses:
 * an ```if``` statement
 * a ```for``` loop
-* write a simple function
+* a simple function
 * what else you need to get comfortable
 
-If you can create about 5 different javascript file (.js) files to get more comfortable with Javascript on the command line.
+If you can, create about 5 different JavaScript (.js) files to get more comfortable with JavaScript on the command line.
 
 You can run the scripts using ```nodejs filename.js```
-

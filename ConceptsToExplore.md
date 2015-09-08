@@ -1,8 +1,8 @@
 # Concepts tp explore
 
-* Handling callbacks in Javascript 
-  * Promises
-  * Async module
+* Handling callbacks in Javascript
+    * Promises
+    * Async module
 * Stored Procedures
 * Object Oriented Design
 * Single Page Apps

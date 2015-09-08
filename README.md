@@ -6,7 +6,7 @@ Note:
 
 * This is a living document, it will change over time
 * please contribute to this workbook by pull requests
-* check back here regularly for new information
+* check back here regularly for new information  (or you can [watch](https://help.github.com/articles/watching-repositories/) this [repository](https://github.com/codex-academy/codeX_ReleaseOneNarrativeWorkbook))
 
 ## Javascript on the command line
 

@@ -4,7 +4,7 @@
 
 On Ubuntu you can install Node JS from the command line using `apt-get`.
 
-You should already have it installed on your laptop if you completed the codeX February 2015 intro.
+You should already have it installed on your laptop if you completed the codeX intro.
 
 The installation instructions are as follows:
 

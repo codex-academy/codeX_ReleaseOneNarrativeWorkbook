@@ -18,10 +18,10 @@ Write a simple number guessing game:
 * if too high let the user know with a red error message
 * if correct display to the user 'Yeah, the correct number is <the number they guessed>. It took you <number of guesses> guesses!'
 
-Use these module:
+Use these modules:
 
- * https://www.npmjs.com/package/readline-sync
- * https://www.npmjs.com/package/chalk
+* [readline-sync](https://www.npmjs.com/package/readline-sync)
+* [chalk](https://www.npmjs.com/package/chalk)
 
 ### TestMyCode in Node JS
 
@@ -29,8 +29,8 @@ Convert the TestMyCode framework to run in node js. You will quickly see there i
 
 But get Red & Green on the command line using one of these modules on the console
 
-* https://www.npmjs.com/package/bash-color
-* https://www.npmjs.com/package/chalk
+* [bash-color](https://www.npmjs.com/package/bash-color)
+* [chalk](https://www.npmjs.com/package/chalk)
 
 You will need to make TestMyCode a module so that you can easily import it into your test scripts.
 Use it to test a few functions.

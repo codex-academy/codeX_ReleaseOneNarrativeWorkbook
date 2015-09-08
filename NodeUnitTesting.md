@@ -2,11 +2,11 @@
 
 To test your NodeJS code you can use the QUnit module that is available in npm.
 
-`npm` is the Node Package Manager - it's backed by a rich repository of modules, available at https://www.npmjs.com/ that you can use in your Node JS projects.
+`npm` is the [ Node Package Manager](https://www.npmjs.com/) - it's backed by a rich repository of modules that you can use in your Node JS projects.
 
 ## Installing QUnit
 
-You can look at the QUnit module here: https://www.npmjs.com/package/qunit
+You can look at [the QUnit module](https://www.npmjs.com/package/qunit).
 
 To install QUnit type this command in a terminal window : `sudo npm install -g qunit`
 

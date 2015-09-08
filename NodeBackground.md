@@ -60,7 +60,7 @@ This is due to the fact that the `functionWithCallback` function takes 2 seconds
 
 There are various modules & libraries available to assist one with the syncronization of callbacks, as this gets complicated at times.
 
-Find a more detailed discussion on callbacks here: https://github.com/maxogden/art-of-node#callbacks
+Find a more detailed discussion on callbacks at [Art of Node: Callbacks](https://github.com/maxogden/art-of-node#callbacks)
 
 ## Node API
 
@@ -70,7 +70,7 @@ Over and above the normal capabilities of JavaScript, Node JS can do loads more 
 * making HTTP calls
 * hosting a HTTP/TCP server
 
-If you are curious about what is possible have a look here: http://nodejs.org/api/
+If you are curious about what is possible have a look at the [Node API](http://nodejs.org/api/).
 
 But don't get bogged down in the details too much at this stage.
 
@@ -78,7 +78,7 @@ But don't get bogged down in the details too much at this stage.
 
 To use JavaScript code in the Web browser is easy: one just needs to reference the code in the right order using using `script` tags.
 
-In Node things are different - it uses the CommonJS module pattern, which handles dependencies between different pieces of your JavaScript code.
+In Node things are different - it uses the [CommonJS](http://www.commonjs.org/) module pattern, which handles dependencies between different pieces of your JavaScript code.
 
 You can create a module that is like an Object literal like this:
 
@@ -135,12 +135,11 @@ greeter.sayHello();
 
 When you create your own modules you always need to use a relative path starting with a `./` - globally installed modules don't need that.
 
-> Some details can be found here:
->  http://nodejs.org/api/modules.html
+> Some details can be found at [Node API: modules](http://nodejs.org/api/modules.html)
 
 One of the major things about Node is that there are loads of third party libraries out there that you can reuse. These libraries allow you to access databases, create APIs or even control a Robot.
 
-The central library of libraries is called, http://npmjs.org, you use the `npm` command to install libraries from there.
+The central library of libraries is called [npm](http://npmjs.org). You can use the `npm` command to install libraries from there.
 
 A few useful npm commands to look into are:
 

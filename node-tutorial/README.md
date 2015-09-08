@@ -155,9 +155,7 @@ Objects in Javascript have various useful methods that make it easy to do variou
 
 A string object in Javascript has a lot of methods that you can use.
 
-To see what those are:
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+To see what those are: [Standard built-on objects > String, on Mozilla Developer Network]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 
 One I would like to highlight is:
 
@@ -194,8 +192,7 @@ Ok, go and google this quickly : `array javascript functions mdn`
 > **Top tip** Whenever you search for javascript specific syntax, add the term 'mdn' to your search criteria.
 This way you are bound to get a Javascript reference from 'The Mozilla Developer Network' (mdn) - which is an authority on Javascript syntax.
 
-Using the search above your first hit should be:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+Using the search above your first hit should be: [Standard built-on objects > Array, on Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 We will focus on three functions of the Array object:
 
@@ -291,17 +288,12 @@ The built in module you should use is called 'fs' - 'fs' stands for File System.
 
 **You should use these 2 function calls from the fs module in your module:**
 
-To get files in the folder:
-
-* http://nodejs.org/api/fs.html#fs_fs_readdirsync_path
-
-To get the data in the files:
-
-* http://nodejs.org/api/fs.html#fs_fs_readfilesync_filename_options
+To get files in the folder: [readdirSync](http://nodejs.org/api/fs.html#fs_fs_readdirsync_path)
+* To get the data in the files: [readFileSync](http://nodejs.org/api/fs.html#fs_fs_readfilesync_filename_options)
 
 > You will need to pass in the encoding of `utf8` as an option parameter to `readFileSync` otherwise a buffer will be returned instead of the string value.
 
-You can read more about the fs module as a whole here: http://nodejs.org/api/fs.html
+You can read more about the fs module as a whole in [the Node API documentation]( http://nodejs.org/api/fs.html).
 
 The module should be in a file called:
 

@@ -62,9 +62,9 @@ app.post('/add_product', function(req, res){
 It reads the form data, prints it to the console and sends it to the template to be rendered back to the client.
 This example is only reading one field, but you can read all the fields that are being sent from the form to the route.
 
-**Note:*** For form variables to work in Express you need to configure some middleware that will process the form parameters. Use the body-parser middleware : https://www.npmjs.com/package/body-parser
+**Note:*** For form variables to work in Express you need to configure some middleware that will process the form parameters. Use the [body-parser middleware](https://www.npmjs.com/package/body-parser).
 
-Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#post-parameters
+Here's an example: [Use ExpressJS to Get URL and POST Parameters: POST Parameters](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#post-parameters).
 
 ## Routes
 
@@ -83,6 +83,6 @@ This translates to something like this: `http://localhost:3000/products/77` and 
 
 This is especially useful for creating edit or view pages in your web application where you can see or edit the details of a data entity.
 
-Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#specific-routing-for-specific-parameters
+Here's an example: [Use ExpressJS to Get URL and POST Parameters: Specific Routing for Specific Parameters](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#specific-routing-for-specific-parameters)
 
 ## Database

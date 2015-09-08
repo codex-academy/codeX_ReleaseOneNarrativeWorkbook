@@ -46,35 +46,30 @@ One can use SQL to create some CRUD screens to manipulates data.
 
 Now that you have a basic high level understanding of database bases and SQL work your way through this tutorial:
 
-http://www.sqlteaching.com/
-
-http://sql.learncodethehardway.org/
+* [SQL Teaching](http://www.sqlteaching.com/)
+* [SQL on Learn Code The Hard Way](http://sql.learncodethehardway.org/)
 
 ## Aggregating data
 
 Once your data is in a database you can use it to calculate aggregates like averages, max or min values.
 
-Some more details:
+Some more details about SQL Aggregate Functions on:
 
-* http://www.sqlclauses.com/sql+aggregate+functions/
-* http://www.mysqltutorial.org/mysql-aggregate-functions.aspx
-* http://www.techotopia.com/index.php/MySQL_Data_Aggregation_Functions
+* [sqlclauses](http://www.sqlclauses.com/sql+aggregate+functions/)
+* [mysqltutorial](http://www.mysqltutorial.org/mysql-aggregate-functions.aspx)
+* [techotopia](http://www.techotopia.com/index.php/MySQL_Data_Aggregation_Functions)
 
 ## MySQL
 
 For our project we will use the widely used open source MySQL database:
 
-Here is a basic tutorial to get going:
-
-https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial
+[Here is a basic tutorial](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) to get going.
 
 ## MySQL and Node JS
 
 Now let's see how to use MySQL with NodeJS to Create, Read, Update and Delete (CRUD) data.
 
-Work your way through this example:
-
-https://github.com/codex-academy/codeX_BasicCRUDExample
+Work your way through this [basic CRUD Example](https://github.com/codex-academy/codeX_BasicCRUDExample).
 
 ## Data model & CRUD for Nelisa
 
@@ -115,7 +110,7 @@ After importing the dump file into your database you should have two tables in y
 
 ## Next steps
 
-Now that you have a database that contains the data from the CSV file we have a base to start our data model from. When creating a data model one needs to be sure that one removes all repetition, when changing the product name one should only need to do it in one place. The process of removing data repetition is called Normalization (https://en.wikipedia.org/wiki/Data_normalization). So we need to create tables for all the different entities and be sure they relate to each other correctly. Relationships between tables are created using fields, a primary key in one table can be stored as  foreign key table in another table to create a data model. Data models enables us to reflect the data storage needs of systems to store and retrieve data effectively.
+Now that you have a database that contains the data from the CSV file we have a base to start our data model from. When creating a data model one needs to be sure that one removes all repetition, when changing the product name one should only need to do it in one place. The process of removing data repetition is called [Normalization](https://en.wikipedia.org/wiki/Data_normalization). So we need to create tables for all the different entities and be sure they relate to each other correctly. Relationships between tables are created using fields, a primary key in one table can be stored as  foreign key table in another table to create a data model. Data models enables us to reflect the data storage needs of systems to store and retrieve data effectively.
 
 ###To populate the database:
 
@@ -141,5 +136,5 @@ Now use the database you just created to answers Nelisa's questions about her da
 
 ## Node database packages:
 
-* https://www.npmjs.com/package/sqlite3
-* https://www.npmjs.com/package/mysql
+* [sqlite3](https://www.npmjs.com/package/sqlite3)
+* [mysql](https://www.npmjs.com/package/mysql)

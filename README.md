@@ -12,7 +12,7 @@ Note:
 
 So far all the Javascript you wrote ran in a web browser. That doesn't need to be the case, one can run Javascript on the command line and use it to program much more than buttons, fields, and elements in the browser. A world of programming Web Servers, Robots, and Databases to name but a few options awaits.
 
-You can read more about Node.JS here: http://eloquentjavascript.net/20_node.html
+You can read more about Node.JS in [Chapter 20 of Eloquent JavaScript](http://eloquentjavascript.net/20_node.html).
 
 You need to have Node installed locally: [Node Setup](NodeSetup.md)
 
@@ -42,5 +42,5 @@ These guides will help you once you get info online and start using the database
 
 ## Good online books about Javascript:
 
-http://chimera.labs.oreilly.com/books/1234000000262/index.html
-http://addyosmani.com/resources/essentialjsdesignpatterns/book/
+* [Programming JavaScript Applications](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
+* [Learning JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)

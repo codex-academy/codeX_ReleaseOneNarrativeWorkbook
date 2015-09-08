@@ -7,9 +7,10 @@ Now let's display all the data you mined from the Nelissa's CSV File online. For
 There are loads of alternatives to all the above in the Node JS ecosystem, but knowing how the selected toolset works will give you a good baseline to explore alternatives from.
 
 You should focus on:
-* Express JS - http://expressjs.com/
-* Handlebars JS - http://handlebarsjs.com/
-* Handlebars JS & Express integration layer - https://www.npmjs.com/package/express-handlebars
+
+* [Express JS](http://expressjs.com/)
+* [Handlebars JS](http://handlebarsjs.com/)
+* [Handlebars JS & Express integration layer](https://www.npmjs.com/package/express-handlebars)
 
 ## Concepts
 
@@ -22,9 +23,9 @@ Some concepts you might bump into while doing this work.
 * Templates
     * HTML & CSS
     * Layout
-    * http://handlebarsjs.com/
+    * [Handlebars JS](http://handlebarsjs.com/)
 * Web Server
-    * Express JS
+    * [Express JS](http://expressjs.com/)
         * Create routes
         * Combine data and template
         * Renders dynamic content using a view engine
@@ -40,7 +41,7 @@ Here are some basic instructions on how to get going with Express JS.
 * create a a `package.json` file using `npm init`
 * install Express JS and store it in the dependencies list in the package.json `npm install --save express`
 
- More details here: http://expressjs.com/starter/installing.html
+ More details at [Installing Express JS](http://expressjs.com/starter/installing.html).
 
 ### Getting a basic Express instance to run
 
@@ -83,7 +84,7 @@ var server = app.listen(3000, function () {
 
 ## Easy server restarts
 
-One thing you will find is that you will need to restart Express JS everytine you changed a source file to get around that, install `nodemon` This will restart Express JS whenever a source file changes.
+One thing you will find is that you will need to restart Express JS everytine you changed a source file to get around that, install [nodemon](https://www.npmjs.com/package/nodemon). This will restart Express JS whenever a source file changes.
 
 It's here : https://www.npmjs.com/package/nodemon - install it using npm
 
@@ -101,7 +102,7 @@ So far we created some routes, but added no style as we haven't had any full web
 
 You should have a basic Express JS setup in place which can be used as a baseline to get some basic reports up and running.
 
-To see more details about this. Have a look here: http://expressjs.com/starter/static-files.html
+See more details about this at [Serving static files in Express](http://expressjs.com/starter/static-files.html).
 
 Let's go ahead:
 
@@ -140,11 +141,11 @@ results in a html enriched with some data.
 
 Handlebars JS is built on top of Mustache templating engine and extends it. Mustache templating aims to be logic-less templating, but that aim makes it hard to use at times.
 
-See some more information on how the templates works: https://mustache.github.io/mustache.5.html
+See some more information on how the templates works on [the Mustache website](https://mustache.github.io/mustache.5.html).
 
-> See some background information on the difference between Handlebars and Mustache : http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js
+See some background information on the difference between Handlebars and Mustache: [What are the differences between Mustache.js and Handlebars.js?](http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js)
 
-Handlebars comes with a set of built in helpers that makes it easy for one to process data and convert it into a layout. It support things like if statements and loops.
+Handlebars comes with a set of built in helpers that makes it easy for one to process data and convert it into a layout. It [supports things like if statements and loops](http://handlebarsjs.com/builtin_helpers.html).
 
 http://handlebarsjs.com/builtin_helpers.html
 
@@ -158,9 +159,7 @@ It goes like this:
 template + data = web page
 ```
 
-So we somehow need to combine templates and data in Express JS. Luckily there is already a Node module that combines Express JS and Handlebars.
-
-Look at this : https://www.npmjs.com/package/express-handlebars
+So we somehow need to combine templates and data in Express JS. Luckily there is already a [Node module that is combining Express JS and Handlebars](https://www.npmjs.com/package/express-handlebars).
 
 Integrate handlebars templating into your spaza-app Express application.
 
@@ -170,19 +169,16 @@ You should now know enough to display online reports for Nelisa.
 
 ## Useful links:
 
-* Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
-* http://expressjs.com/
-* http://handlebarsjs.com/
-* https://mustache.github.io/
+* [Loading JSON files using require](https://nodejs.org/api/modules.html#modules_file_modules)
+* [Express JS](http://expressjs.com/)
+* [Handlebars JS](http://handlebarsjs.com/)
+* [Mustache](https://mustache.github.io/)
 
 ## Layout & CSS frameworks
 
 How do you make your Spaza Shop reports looking nice on laptops, tablets and phones? Responsive Web Design is the answer. If a web site is responsive it will respond correctly to the device that it is displayed on. Responsive web design is a whole field in it's own right. But luckily there are some frameworks you can build on. These frameworks are:
 
-http://getbootstrap.com/
-
-http://foundation.zurb.com/
-
-http://getskeleton.com/
-
-Comparing CSS frameworks: http://responsive.vermilion.com/compare.php
+* [Bootstrap](http://getbootstrap.com/)
+* [Foundation](http://foundation.zurb.com/)
+* [Skeleton](http://getskeleton.com/)
+* [Comparing CSS frameworks](http://responsive.vermilion.com/compare.php)

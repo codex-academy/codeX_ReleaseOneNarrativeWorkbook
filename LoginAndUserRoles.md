@@ -14,9 +14,7 @@ As HTTP is a stateless protocol by design, to store user session information one
 
 For security reasons one would like to store the minimum amount of data on the client. On the server side the session data can be stored either straight on disk or in a database of sorts. The Cookie normally contains an encrypted token that associates the HTTP session with the Session Data stored on the Server. An expiry time can be set on a HTTP Session to allow for a users login to expire if they are not actively using the application.
 
-To add HTTP Session support to your Express Server you need to install the `express-session` package
-
-https://www.npmjs.com/package/express-session
+To add HTTP Session support to your Express Server you need to install the [express-session package](https://www.npmjs.com/package/express-session).
 
 ### Middleware
 
@@ -91,7 +89,7 @@ Now for a more advanced implementation. A system that:
 * Redirects a user back to the login screen with a message if their login attempt failed
 * Allows a user to register:
     * Stores user details in a database table
-    * Encrypts the user password - tip look at the `bcrypt` module in npm : https://www.npmjs.com/package/bcrypt-nodejs
+    * Encrypts the user password. Tip: look at [the bcrypt module](https://www.npmjs.com/package/bcrypt-nodejs) in npm.
 * Locks the users account if they supply the wrong password 3 times in a row.
 * Allows a user to logout
 
@@ -99,6 +97,4 @@ Once you have mastered the above you should have a good understanding of how the
 
 ## Resources
 
-Once you understand the Authentication basics you can look into some third party Authentication modules in npm. For example, Passport JS supports a wide array of Authentication methods including Google, Facebook, Github, etc.
-
-See details here: http://passportjs.org/docs
+Once you understand the Authentication basics you can look into some third party Authentication modules in npm. For example, [Passport JS](http://passportjs.org/docs) supports a wide array of Authentication methods including Google, Facebook, Github, etc.

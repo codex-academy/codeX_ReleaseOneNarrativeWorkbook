@@ -21,7 +21,7 @@ A Platform as a Service (PaaS) is server infrastructure that is provided in the 
 
 The PaaS service we will be using is called [Heroku](http://heroku.com/) and it can be used to deploy a wide range of application frameworks of which Node JS is one.
 
-To deploy your Spaza application register at Heroku and follow these steps: https://devcenter.heroku.com/articles/deploying-nodejs
+To deploy your Spaza application register at Heroku and [follow these steps](https://devcenter.heroku.com/articles/deploying-nodejs).
 
 ## IaaS
 
@@ -31,29 +31,28 @@ Infrastructure as a Service (IaaS) is server infrastructure that is provided as 
 
 #### Digital Ocean
 
-Digital Ocean is an IaaS provider which provides VPS's.
+[Digital Ocean](https://www.digitalocean.com) is an IaaS provider which provides VPS's.
 
-You can find them at https://www.digitalocean.com
-They have very good tutorials : https://www.digitalocean.com/community/tutorials
+They have [very good tutorials](https://www.digitalocean.com/community/tutorials).
 
 Here are some tutorials you will need to setup a server to run NodeJS, Nginx and Mysql:
 
- * https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
- * https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+* [How To Set Up a Node.js Application for Production on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04)
+* [How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04)
 
 You will need to follow some of these tutorials piecemeal as we are not using Apache as a web server or going to setup PhpMyAdmin on the VPS.
 
 #### Afrihost
 
 * They are a South African company that provide IaaS.
-* https://www.afrihost.com/site/product/cloud_hosting
+* [Cloud Server Hosting](https://www.afrihost.com/site/product/cloud_hosting)
 
 #### Amazon Web Services
 
 * A big international online retailer also provides IaaS
 * Based in Cape Town - by the way
-* aws.amazon.com/free
+* [Amazon Web Services](http://aws.amazon.com/free/)
 
 #### Google Compute engine
 
-* https://cloud.google.com/compute/
+* [Google Cloud Platform](https://cloud.google.com/compute/)

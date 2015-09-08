@@ -23,16 +23,15 @@ Having a good handle on JQuery is required going forward
 
 * Basic data modelling
 * SQL
-* Control Breaks - reports with subheaders
-      http://en.wikipedia.org/wiki/Control_break
+* [Control Breaks](http://en.wikipedia.org/wiki/Control_break) - reports with subheaders
 * Sorting data
 
 ## Create reports
 
 * Plain HTML & CSS
 * Responsive design basics
-* Bootstrap - getbootstrap.com
-* Foundation - http://foundation.zurb.com/
+* [Bootstrap](http://getbootstrap.com)
+* [Foundation](http://foundation.zurb.com/)
 
 ## Setup a basic web server
 
@@ -45,6 +44,6 @@ Having a good handle on JQuery is required going forward
 
 * Use basic template
 * Use handlebars
-* http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/
-* http://www.korenlc.com/handlebars-js-tutorial-templating-with-handlebars/
-* http://learnwebtutorials.com/step-by-step-getting-started-tutorial-using-handlebars-js
+* [Handlebars.js Tutorial: Learn Everything About Handlebars.js JavaScript Templating]( http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/)
+* [Handlebars.js Tutorial: Templating with Handlebars](http://www.korenlc.com/handlebars-js-tutorial-templating-with-handlebars/)
+* [Step-by-step getting started tutorial on using Handlebars JS](http://learnwebtutorials.com/step-by-step-getting-started-tutorial-using-handlebars-js)

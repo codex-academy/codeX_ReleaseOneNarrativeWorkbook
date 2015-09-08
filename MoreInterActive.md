@@ -2,7 +2,7 @@
 
 To create a more interactive web application experience to users you need to take control of page rendering and minimize page refreshes. Instead of refreshing a whole page, refreshing only certain fragments of a page results in better user experience.
 
-To refresh only certain fragments of the page one uses AJAX, which is based upon the `XMLHttpRequest` object. This allows one to send HTTP requests, such as GET and POST, to the backend asynchronously. See more details about the XMLHttpRequest here: http://eloquentjavascript.net/17_http.html
+To refresh only certain fragments of the page one uses AJAX, which is based upon the `XMLHttpRequest` object. This allows one to send HTTP requests, such as GET and POST, to the backend asynchronously. See more details about the XMLHttpRequest in [Chapter 17 of Eloquent Javascript: HTTP](http://eloquentjavascript.net/17_http.html)
 
 ## AJAX using jQuery
 
@@ -36,7 +36,7 @@ alternatively the call can return a Javascript Object (JSON):
   });
 ```
 
-See some more details here: https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType
+See some more details in the [jQuery.get() documentation](https://api.jquery.com/jquery.get/#jQuery-get-url-data-success-dataType)
 
 For sending form data to the server side using AJAX one should use HTTP POST.
 
@@ -52,7 +52,7 @@ jQuery.click('#submitForm', function(){
 });
 ```
 
-See more details about POST here:  https://api.jquery.com/jQuery.post/#jQuery-post-url-data-success-dataType
+See more details about POST in the [jQuery.post() documentation](https://api.jquery.com/jQuery.post/#jQuery-post-url-data-success-dataType).
 
 ## Different styles
 
@@ -64,8 +64,7 @@ Using the HTML sections is easier to use, but using the returned datasets is a m
 
 AJAX gives you much more flexibility, but makes your client side javascript more complicated. As it moves some of the logic from the server side to the client side.
 
-> Good news : you can use handlebars templating on the client side.
-> See some details here: http://handlebarsjs.com/
+> Good news : you can use [handlebars](http://handlebarsjs.com/) templating on the client side.
 
 ## Try this using AJAX:
 

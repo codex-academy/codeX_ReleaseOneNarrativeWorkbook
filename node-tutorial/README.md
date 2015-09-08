@@ -3,10 +3,10 @@
 A quick introduction to Node JS.
 
 This will introduce you to using Javascript on the command line using Node JS.
- 
+
 ##Testing what've done
 
-There are some pre written tests that will track your progress through this tutorial. To test that you have done the right you need to have the ```mocha``` module installed.
+There are some pre-written tests that will track your progress through this tutorial. To test that you have done the right thing you need to have the ```mocha``` module installed.
 
 Install it by typing this into a terminal window:
 
@@ -22,7 +22,7 @@ You now need to:
 
 You can use the command below to see which tests are passing and which not:
 
-```mocha --reporter spec``` 
+```mocha --reporter spec```
 
 As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the tutorial more and more of the tests should pass.
 
@@ -56,7 +56,7 @@ You can use ```mocha --reporter spec``` to see details on which tests are passin
 
 So far all the NodeJS programs your wrote were little islands, the only way they communicated with the end user was through the console. And the only way we were able to test them was using some trickery to track what was logged to the console.
 
-For sharing Javascript files in the browser one use the ```script``` tag, but it is also tricky as these script references needs to be loaded in the right order etc.
+For sharing Javascript files in the browser one uses the ```script``` tag, but it is also tricky as these script references needs to be loaded in the right order, etc.
 
 NodeJS has a more sophisticated module system, that is based on CommonJS. Not only can you create your own modules, but NodeJS also has it own built in modules that you can use to access files on disk for example.
 
@@ -73,7 +73,7 @@ exports.low = function(){
 }
 ```
 
-Save the above code in a file called ```my_module.js```, then create new file let's say called ```test_modules.js``` you can use it was a module like this:
+Save the above code in a file called ```my_module.js```, then create a new file, let's say called ```test_modules.js```. You can use it as a module like this:
 
 ```javascript
 
@@ -96,13 +96,13 @@ printed to the screen.
 
 Run ```mocha``` from the command line. The 'Let's use modules' test should pass.
 
-Why use modules you ask? One use modules to break your program down into more manageable parts, encouraging decoupling of code. Or to break it into logical components that each focus on a specific task. It also makes it easier for one to test each component. Testable code is decoupled code that is properly componentized by using modules.
+Why use modules you ask? You use modules to break your program down into more manageable parts, encouraging decoupling of code. Or to break it into logical components that each focus on a specific task. It also makes it easier for one to test each component. Testable code is decoupled code that is properly componentized by using modules.
 
 ## More modules:
 
-One can also create modules that exports a whole new function constructor function of its own. And it can take in parameters at construction time.
+One can also create modules that export a whole new constructor function of its own. And it can take in parameters at construction time.
 
-This looks like this:
+It looks like this:
 
 ```javascript
 module.exports = function(descMap){
@@ -110,7 +110,7 @@ module.exports = function(descMap){
   this.high = function(){
     return descMap['high'];
   }
-  
+
   this.low = function(){
    return descMap['low'];
   }
@@ -145,11 +145,11 @@ If you run ```mocha``` the 'Constructor module' test should pass.
 
 ##Useful functions built into Javascript
 
-Objects in Javascript has various usefull methods that makes it easy to do various tasks. We will look at a few useful methods of the String and Array object just to show you what is possible. Be sure to look into what other methods are supported by the String and Array objects as well as the other built in objects in Javascript - this will prevent you from doing unnecessary work.
+Objects in Javascript have various useful methods that make it easy to do various tasks. We will look at a few useful methods of the String and Array objects just to show you what is possible. Be sure to look into what other methods are supported by the String and Array objects as well as the other built-in objects in Javascript - this will prevent you from doing unnecessary work.
 
 ### String
 
-A string object in Javascript has a lot of methods that allows you can use.
+A string object in Javascript has a lot of methods that you can use.
 
 To see what those are:
 
@@ -157,9 +157,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 One I would like to highlight is:
 
-```split``` - the split function. This takes a string and splits it into different parts using a delimeter.
+```split``` - the split function. This takes a string and splits it into different parts using a delimiter.
 
-Say for example you have a sentence and I would like to find all the words in the sentence.
+Say for example you have a sentence and you would like to find all the words in the sentence.
 
 ```javascript
 var sentence = "One day I went to the aquarium";
@@ -173,12 +173,12 @@ console.log(words);
 
 ```
 
-One useful trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line in the file. Now you can go even further by splitting each line into seperate fields. After this you should be able access all the data in the text file quite easily.
+One useful trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line in the file. Now you can go even further by splitting each line into separate fields. After this you should be able access all the data in the text file quite easily.
 
 #### A useful recipe to remember:
 * read a text file from disk
 * split the file into an Array of string using the new lines character (```\n```) to get each line in the file
-* split each line using a delimeter (either a space ' ' or comma ',' for example) to get all the fields in the line.
+* split each line using a delimiter (either a space ' ' or comma ',' for example) to get all the fields in the line.
 
 ### Arrays
 
@@ -186,7 +186,7 @@ So what methods does an Array have?
 
 Ok, go and google this quickly : ```array javascript functions mdn```
 
-> **Top tip** Whenever you search for javascript specific syntax, add the term 'mdn' to your search criteria. 
+> **Top tip** Whenever you search for javascript specific syntax, add the term 'mdn' to your search criteria.
 This way you are bound to get a Javascript reference from 'The Mozilla Developer Network' (mdn) - which is an authority on Javascript syntax.
 
 Using the search above your first hit should be:
@@ -198,7 +198,7 @@ We will focus on three functions of the Array object:
 * map
 
 #### forEach
-```forEach``` is any easy way to loop through all the entries in a list 
+```forEach``` is any easy way to loop through all the entries in a list
 
 To display all the words in a list you can do this:
 
@@ -260,20 +260,20 @@ console.log(uppercaseWords);
 
 ##Let's get modular
 
-Now let's use your newly found knowledge about modules. 
+Now let's use your newly found knowledge about modules.
 
-You will now create a new module and also use some of NodeJS's built in modules. The module should be able to return a list of all the rows in all the files in a specified folder. Your module should be able to do that Syncronously and Asyncronously.
+You will now create a new module and also use some of NodeJS's built in modules. The module should be able to return a list of all the rows in all the files in a specified folder. Your module should be able to do that Synchronously and Asynchronously.
 
 So your module should:
 * find all the files in a folder
 * then read each file in the folder
 * find each row in each file
-* then append each row to a list 
+* then append each row to a list
 * return the list that contains all the lines off all the files.
- 
-For example: 
-* if there are 3 files in the folder 
-* and each file has 3 rows 
+
+For example:
+* if there are 3 files in the folder
+* and each file has 3 rows
 * your modules should return a list containing the 9 rows in each file
 
 The built in module you should use is called 'fs' - 'fs' stands for File System. The ```fs``` built in module is handling all things related to accessing files from Node JS.
@@ -288,32 +288,32 @@ To get the data in the files:
 
 > You will need to pass in the encoding of ```utf8``` as an option parameter to ```readFileSync``` otherwise a buffer will be returned instead of the string value.
 
-You can read more about it fs module as a whole here: http://nodejs.org/api/fs.html
+You can read more about the fs module as a whole here: http://nodejs.org/api/fs.html
 
 The module should be in a file called:
 * read-folder.js
 * expose 2 methods with parameters:
-  * ```linesInFiles``` which take folderName as a parameter and returns an Array
-  * ```linesInFilesAsync``` which take two parameters ```folderName and callback``` - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
-      
+  * ```linesInFiles``` which takes folderName as a parameter and returns an Array
+  * ```linesInFilesAsync``` which takes two parameters ```folderName and callback``` - the callback should return 2 parameters ```err``` & ```files```. Calling it should look like this:
+
       ```javascript
         linesInFilesAsync('/dir/name', function(err, files){
         });  
       ```
-* use this folder as input: ```./files/week1``` 
+* use this folder as input: ```./files/week1```
 
 ##Product list
 
-Create a module that can read a product file and do two things: 
+Create a module that can read a product file and do two things:
 
 * return a list of all the products in the file
 * return the total number of items sold for each product
 
 The module should:
 * be called ```products.js```
-* have two ***Asyncronous*** methods:
+* have two ***Asynchronous*** methods:
   * ```productNames``` - returns a list of products
   * ```productsSold``` - returns a map of how many of each product is sold - mapping productName to quantity sold.
 * use the ```./files/products.csv``` file to test
- 
+
 **Once all the tests are passing you are done!**

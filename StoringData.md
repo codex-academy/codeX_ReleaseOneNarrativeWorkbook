@@ -1,15 +1,15 @@
 #Capture and storing data
 
-So far you have spend alot of time and effort slicing and dicing data. You started of using a CSV file as a datasource which you then migrated into a database. Once your data were in the database it became much easier to query that data, but how do we get data into your database. That is what we will explore next. We will go one step further, we will start capturing data from a web browser and store it in the database.
+So far you have spent a lot of time and effort slicing and dicing data. You started off using a CSV file as a data source which you then migrated into a database. Once your data was in the database it became much easier to query that data. How do we get data into your database? That is what we will explore next. We will go one step further, we will start capturing data from a web browser and storing it in a database.
 
-To capture data on a web page one needs an html form with fields to allow data to be entered into the web page. Once the data is entered on the web page one need to store the data some where. There are various different ways of doing that, but we will be focussing on web forms.
+To capture data on a web page one needs an HTML form with fields to allow data to be entered into the web page. Once the data is entered on the web page one needs to store the data somewhere. There are various different ways of doing that, but we will be focusing on web forms.
 
 ## Web forms
 
-The ```<form>``` element wraps the various different types of web form elements
+The ```<form>``` element wraps the various different types of web form elements.
 
 The basic web form elements used for capturing data are:
-* input - various differen types including:
+* input - various different types including:
   * text
   * button
   * radio
@@ -20,7 +20,7 @@ The basic web form elements used for capturing data are:
 * select
 * hidden
 
-A web form needs an action and type attributes and submit button.
+A web form needs action and type attributes and a submit button.
 
 For example:
 
@@ -33,11 +33,11 @@ For example:
 
 The web form above will send a ```POST``` request to the ```add_product``` route. The form will contain the value that was entered in the browser in the ```product_name``` field of the form.
 
-You can use CSS to style your html forms, they can be tricky to style.
+You can use CSS to style your HTML forms. They can be tricky to style.
 
-## Serverside variables
+## Server side variables
 
-When one create routes in Express the route callbacks always takes two parameters, req and res. Those two variables are Request (req) and Response (res) respectively:
+When one creates routes in Express the route callbacks always take two parameters, req and res. Those two variables are Request (req) and Response (res) respectively:
 
 Here is a quick example:
 
@@ -59,12 +59,12 @@ app.post('/add_product', function(req, res){
 });
 ```
 
-It reads the form data, prints it to the console and send it to the template to be rendered back to the client.
-The example is only reading one field, but one can read all the fields that are being sent from the form to the route.
+It reads the form data, prints it to the console and sends it to the template to be rendered back to the client.
+This example is only reading one field, but you can read all the fields that are being sent from the form to the route.
 
-**Note:*** that for form variables to work in Express you need to configure some middleware that will process the form parameters. Use the body-parser middleware : https://www.npmjs.com/package/body-parser
+**Note:*** For form variables to work in Express you need to configure some middleware that will process the form parameters. Use the body-parser middleware : https://www.npmjs.com/package/body-parser
 
-Here's and example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#post-parameters
+Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#post-parameters
 
 ## Routes
 
@@ -81,9 +81,8 @@ app.get('/products/:id', function(req, res){
 
 This translates to something like this: ```http://localhost:3000/products/77``` and it will return ```you sent me : 77``` to the browser.
 
-This is especially usefull for creating for creating edit or view pages in your web application where you can see or edit the details of an data entity.
+This is especially useful for creating edit or view pages in your web application where you can see or edit the details of a data entity.
 
 Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#specific-routing-for-specific-parameters
 
 ## Database
-

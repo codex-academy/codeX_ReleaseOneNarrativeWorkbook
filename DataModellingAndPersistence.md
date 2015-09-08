@@ -97,6 +97,8 @@ Type in the terminal:
 mysql -u root -p
 ```
 
+This tells MySQL that you want to log in. `-u root` means the user called root. `-p` means log in with a password. Since we didn't supply a password, MySQL will ask us for one.
+
 Then do:
 
 ```

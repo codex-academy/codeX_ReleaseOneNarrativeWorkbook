@@ -1,8 +1,8 @@
-#Create online reports
+# Create online reports
 
 ## Background
 
-Now let's display all the data you mined from the Nelissa's CSV File online. For that you will need a web server, a template engine, and data. You already have the data. As a web server we will be using Express JS and as a template engine Handlebars JS. You will install all these dependencies using ```npm```
+Now let's display all the data you mined from the Nelissa's CSV File online. For that you will need a web server, a template engine, and data. You already have the data. As a web server we will be using Express JS and as a template engine Handlebars JS. You will install all these dependencies using `npm`
 
 There are loads of alternatives to all the above in the Node JS ecosystem, but knowing how the selected toolset works will give you a good baseline to explore alternatives from.
 
@@ -16,28 +16,29 @@ You should focus on:
 Some concepts you might bump into while doing this work.
 
 * JSON
-  * Javascript Object Notation
-  * Data Interchange - alternative to XML
-  * Use require statement to import data
+    * Javascript Object Notation
+    * Data Interchange - alternative to XML
+    * Use require statement to import data
 * Templates
-  * HTML & CSS
-  * Layout
-  * http://handlebarsjs.com/
+    * HTML & CSS
+    * Layout
+    * http://handlebarsjs.com/
 * Web Server
-  * Express JS
-    * Create routes
-    * Combine data and template
-    * Renders dynamic content using a view engine
+    * Express JS
+        * Create routes
+        * Combine data and template
+        * Renders dynamic content using a view engine
 
 ## Get going with Express JS
 
 Here are some basic instructions on how to get going with Express JS.
 
 ### Install Express JS
-  * create a new folder in your projects folder called ```spaza-app```
-  * change into this folder using ```cd spaza-app```
-  * create a a ```package.json``` file using ```npm init```
-  * install Express JS and store it in the dependencies list in the package.json ```npm install --save express```
+
+* create a new folder in your projects folder called `spaza-app`
+* change into this folder using `cd spaza-app`
+* create a a `package.json` file using `npm init`
+* install Express JS and store it in the dependencies list in the package.json `npm install --save express`
 
  More details here: http://expressjs.com/starter/installing.html
 
@@ -45,50 +46,52 @@ Here are some basic instructions on how to get going with Express JS.
 
 > An instance is a copy of a server.
 
-Create a file called ```server.js``` and copy the text below into it:
+Create a file called `server.js` and copy the text below into it:
 
-   ```javascript
-   var express = require('express');
-   var app = express();
+```javascript
+var express = require('express');
+var app = express();
 
-   // create a route
-   app.get('/', function (req, res) {
-     res.send('Hello World!');
-   });
+// create a route
+app.get('/', function (req, res) {
+ res.send('Hello World!');
+});
 
-   //start the server
-   var server = app.listen(3000, function () {
+//start the server
+var server = app.listen(3000, function () {
 
-     var host = server.address().address;
-     var port = server.address().port;
+ var host = server.address().address;
+ var port = server.address().port;
 
-     console.log('Example app listening at http://%s:%s', host, port);
+ console.log('Example app listening at http://%s:%s', host, port);
 
-   });
-   ```
-   **Now try this:**
+});
+```
+**Now try this:**
 
-   * Start the server by typing ```node server.js``` and pressing enter in the console.
-   * In the web browser navigates to http://localhost:3000/
-   * Stop the server in the console by pressing Ctrl-C in the console a few times
-   * Now navigate to http://localhost:3000/ again. What happens?
-   * Start the server and try the above again.
-   * Try to navigate to ```http://localhost:3000/hello``` - what happens? How can we fix that?
-   * Try this:
+* Start the server by typing `node server.js` and pressing enter in the console.
+* In the web browser navigates to http://localhost:3000/
+* Stop the server in the console by pressing Ctrl-C in the console a few times
+* Now navigate to http://localhost:3000/ again. What happens?
+* Start the server and try the above again.
+* Try to navigate to `http://localhost:3000/hello` - what happens? How can we fix that?
+* Try this:
     * Stop the web server
     * Add a new route for '/hello' that renders 'Hello codeX!' to the screen
     * Start the server
-    * Now try to navigate to ```http://localhost:3000/hello``` What happened?
+    * Now try to navigate to `http://localhost:3000/hello` What happened?
 
 ## Easy server restarts
 
-One thing you will find is that you will need to restart Express JS everytine you changed a source file to get around that, install ```nodemon``` This will restart Express JS whenever a source file changes.
+One thing you will find is that you will need to restart Express JS everytine you changed a source file to get around that, install `nodemon` This will restart Express JS whenever a source file changes.
 
 It's here : https://www.npmjs.com/package/nodemon - install it using npm
 
 Use it like this:
 
-```nodemon server.js```
+```
+nodemon server.js
+```
 
 Go ahead and setup nodemon.
 
@@ -101,20 +104,21 @@ You should have a basic Express JS setup in place which can be used as a baselin
 To see more details about this. Have a look here: http://expressjs.com/starter/static-files.html
 
 Let's go ahead:
+
 * and add a public folder in your spaza-app folder
-* change your server.js file to render static files from the public folder using this, ```app.use(express.static('public'));```
+* change your server.js file to render static files from the public folder using this, `app.use(express.static('public'));`
 * in the public folder create a file called index.html and add some content to it
 * Navigate to the file using http://localhost:3000/index.html
 * If you are using nodemon no server restart would be required. If not, restart your server (please start using nodemon!).
 * Going forward you will be able to use the public folder to store and reference css files and images from.
 
-##Templating
+## Templating
 
-We will be using ```handlebars``` as the template engine, it combines data with templates to render information.
+We will be using `handlebars` as the template engine, it combines data with templates to render information.
 
 A typical handlebars template look likes this
 
-```
+```handlebars
 <div class="entry">
   {{#if author}}
     <h1>{{firstName}} {{lastName}}</h1>
@@ -150,7 +154,9 @@ As we need to display the data in the web browser we use the templates, which is
 
 It goes like this:
 
-```template + data = web page```
+```
+template + data = web page
+```
 
 So we somehow need to combine templates and data in Express JS. Luckily there is already a Node module that combines Express JS and Handlebars.
 
@@ -162,8 +168,7 @@ Integrate handlebars templating into your spaza-app Express application.
 
 You should now know enough to display online reports for Nelisa.
 
-
-##Useful links:
+## Useful links:
 
 * Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
 * http://expressjs.com/

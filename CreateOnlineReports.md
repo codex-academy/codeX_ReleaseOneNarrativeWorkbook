@@ -43,6 +43,8 @@ Here are some basic instructions on how to get going with Express JS.
 
 ### Getting a basic Express instance to run
 
+> An instance is a copy of a server.
+
 Create a file called ```server.js``` and copy the text below into it:
 
    ```javascript

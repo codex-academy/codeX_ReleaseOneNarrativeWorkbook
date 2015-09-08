@@ -12,6 +12,8 @@ Install it by typing this into a terminal window:
 
 ```sudo npm install -g mocha```
 
+The `-g` is for global package. That means you will be able to run mocha from the command line, from any directory.
+
 You now need to:
 * fork the [codeX_ReleaseOneNarrativeWorkbook](https://github.com/codex-academy/codeX_ReleaseOneNarrativeWorkbook) repository
 * Now clone a copy into your local project folder

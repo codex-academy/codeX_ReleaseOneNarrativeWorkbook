@@ -41,9 +41,9 @@ Refactoring is the process of making your codebase better without changing it is
 
 The next thing is to check if your [code is testable](./RefactorToBeTestable.md)
 
-Annd then we you should look at Promises for [a better way to handle callbacks](./Promises.md)
+Then look at Promises for [a better way to handle callbacks](./Promises.md)
 
-## Now refactor your database modules to use Promises
+## Refactor your database modules to use Promises
 
 A simple wrapper around the Mysql code like this will suffice:
 

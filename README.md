@@ -37,6 +37,9 @@ These guides will help you once you get info online and start using the database
 * [Capture and store data](./StoringData.md)
 * [Create a web app that support different user roles](./LoginAndUserRoles.md)
 * [Create a more Interactive website](./MoreInterActive.md)
+* [Make your code better](./CodeCleanupAndRefactor.md)
+
+## In progress
 * [Create an API](./CreateAPI.md)
 * [Concepts to explore next](./ConceptsToExplore.md)
 

@@ -1,6 +1,12 @@
-## Make it testable
+# Testable code
 
-The next thing we need to do is to make sure that our code is testable. To do that we would need to decouple your code a bit more. Decoupling means that code the different components of your code is seperated out properly. Let's look at the example below:
+You need to do is to make sure that our code is tested. You cheated actually, but your focus was on learning how to get things done. How much of your code are actually tested? No much?!
+
+Let's fix that! You will need to decouple your code to make it testable.
+
+Decoupled code have different logical components that is seperated out from each other.
+
+Let's look at the code below:
 
 ```javascript
 exports.getProduct = function(req, res, next){
@@ -25,15 +31,17 @@ Ask yourself:
 * How many reasons does this function have to change?
 * How can I write a unit test to test it?
 
-It's doing alot! And it is hard to test! And this code will change if one needs to change the database query and if the fromt end needs to change.
-
-Let's look try and make that code simpler and make it more testable.
+It's doing alot! And it is hard to test! This code will change for the database and if the front end changes. So it's concerned with both the back and front end.
 
 ## Refactor it to be testable
 
-To make the code more testable we will need decouple the database code from the the front end code. Which parts are whic you ask? That is really hard to determine at this stage I know! Say we would like to test the database code to check if the query returns the right data. Let's decouple the database code.
+To make the code more testable we will need decouple the database code from the front end code.
 
-Let's create the code below in a file called `products-data-service.js`:
+Which parts are which, are really hard to determine at this stage!
+
+Let's start by creating testable database code to check if the query returns the right data.
+
+To do that we decouple the database code by creating a new module in a file `products-data-service.js`:
 
 ```javascript
 module.exports = function(connection){
@@ -50,9 +58,9 @@ module.exports = function(connection){
 }
 ```
 
-Now we have a module that only does one thing! It takes care of getting products from the database. We can later add more functionality to it to store products maybe or do other Products database related things. But the fact remain that this class is focussed on Product related database matters. This module is also easily testable now.
+Now we have a testable products database module.
 
-You can test it using (mocha)[] like his:
+You can test it using [mocha](https://mochajs.org/) like his:
 
 ```javascript
 
@@ -70,7 +78,7 @@ describe('test the ProductsDataService', function(){
     });
 });
 ```
-Our initial piece of code can now be re-written as well:
+Our initial piece of code can now be re-written as follows:
 
 ```javascript
 var ProductsDataService = require('products-data-service');
@@ -92,23 +100,22 @@ exports.getProduct = function(req, res, next){
 };
 ```
 
-Things are looking better already. The code above have less reasons to change. Any database related changes shouldn't affect the code, only screen related changes. So we are starting to seperate concerns better.
+The code have less reason to change now, database related changes shouldn't affect it, only screen related changes.
 
 **Now go ahead and refactor your Products module** and write some mocha tests for it.
 
-
 # Test database services with Travis
 
-As you now have some Mocha tests for your database code setup a Travis instance for your project. You will need some dtabase scripts that can create and populate your database every time Travis runs, but this is a good way of ensuring your database script and your database are syncronized.
+Now that you have Mocha tests for your database code, setup a Travis instance for your project. You will need  database scripts that can create and populate your database every time Travis runs. This is a good practice and will ensure your database script and your database is syncronized.
 
-Look at [example project](https://github.com/avermeulen/TravisWithDatabase) that use Travis with a database. Take a look at the `.travis.yml` especially.
+Look at [example project](https://github.com/avermeulen/TravisWithDatabase) that use Travis with a database. Note the `.travis.yml` especially.
 
 
 ## Better database connections
 
-The code above is still coupled to the database use due to the `req.getConnection` function call. We need this call we need to handle the database connection using the `express-myconnection` module from a central configuration in our `server.js` file.
+The code is still coupled to the database due to the `req.getConnection` function call. It handles the database connection using the `express-myconnection` module with central database configuration in your `server.js` file.
 
-What if we could write the getProduct function like this:
+By using an alternative `connection-provider` module one can change this code to:
 
 ```javascript
 exports.getProduct = function(req, res, next){
@@ -132,11 +139,11 @@ exports.getProduct = function(req, res, next){
 };
 ```
 
-Now the code is totally decoupled from the database. There is a new method on the http request object instance `req` which gives us access to the productDataServices instance. Now the front end code and the database concerns is totally seperated from each other.
+The code is decoupled from the database noew. There is a new method on the http request object instance `req` giving access to the productDataServices. The front end and the database concerns are now properly seperated out.
 
-To setup the code above you need to install a module called `connection-provider` and configure it with your database details.
+To use this approach you need to install a module called `connection-provider` and configure it with your database details.
 
-Install it it using: `npm install --save avermeulen/connection-provider`
+Install it it like this: `npm install --save avermeulen/connection-provider`
 
 Configure it using in your server.js as follows:
 

@@ -1,8 +1,8 @@
 # A better way of handling callbacks
 
-Callbacks are an integral part of Node JS and you are using them on a daily basis. They can be a pain at times and can lead to an asynchronous mess. Callbacks within callbacks leads messy and complicated code.
+Callbacks are an integral part of Node JS and you are using them on a daily basis. They can be a pain at times and can lead to code that is hard to read. Callbacks within callbacks soon become hard to read.
 
-Here is how we read two files asynchronously and print their contents to the screen:
+Look at the code below that reads two files asynchronously and print their contents to the screen:
 
 ```javascript
     var fs = require('fs');
@@ -20,15 +20,13 @@ Here is how we read two files asynchronously and print their contents to the scr
     });
 ```
 
-The code above have functions that needs to be called in sequence, hence the once functio are called in the callback of the previous function.
+This is pretty standard Node code but yes it can soon become messy. Luckily there is an alternative.
 
 ## Promises
 
-Using [Promises](https://www.promisejs.org/) makes Callbacks easier to work with they are also make your code more composable.
+[Promises](https://www.promisejs.org/) makes callbacks easier to work with they are also make your code more [composable](./#).
 
 `A promise represents the eventual result of an asynchronous operation.`
-
-Callback functions are sent into a function as a parameter. We basically tell the function that do something with the parameters I sent you. And when you are done return the results using the callback function I gave you. The callback returns an error or the results of the call.
 
 There are various Promises modules we will be using [bluebird](https://github.com/petkaantonov/bluebird). You can install it from npm using `npm install bluebird`
 
@@ -64,9 +62,9 @@ Here is the same code using a Promise:
 
 This code is much easier to read! We are calling `readFile` with a file name, the eventual result being the content of the file or an error. There are still callbacks, but the code flow much better.
 
-The code is using bluebird's promisification support, it can automatically create promises ([promisify](https://github.com/petkaantonov/bluebird/blob/master/API.md#promisification)) from modules that follows the Node JS callback convention. But we will focus at creating them manually as well. As we would like to use Promises with constructor functions, which bluebird's promisification can't do.
+The code is using bluebird's promisification support, it can automatically create promises ([promisify](https://github.com/petkaantonov/bluebird/blob/master/API.md#promisification)) from modules that follows the Node JS callback convention. We will also look at creating them manually, as we need Promises with constructor functions, which bluebird's promisification doesn't support.
 
-Using a Promise you can change to above code into:
+Using a Promise we can create a readFile constructor/factory function that looks like this:
 
 ```javascript
 var readFile = require('read-file');
@@ -80,7 +78,7 @@ readFile("try_this.md")
         });
 ```
 
-To create the `read-file` module as a Promise looks like this:
+To create the `read-file` module using a Promise looks like this:
 
 ```javascript
 var Promise = require('bluebird');
@@ -96,7 +94,9 @@ module.exports = function(fileName){
 };
 ```
 
-Bluebird provides lots of very usefull utility functions that makes our live much more pleasant, when working with asynchronous code. One such function is  `join`, it prevent nested callbacks.
+## Utility functions
+
+Bluebird provides lots of very useful utility functions that makes our live much more pleasant, when working with asynchronous code. One such function is  `join`, it prevent nested callbacks.
 
 Reading multiple files using the join function looks like this :
 

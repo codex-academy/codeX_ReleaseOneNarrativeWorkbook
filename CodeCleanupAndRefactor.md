@@ -1,6 +1,6 @@
 # Code cleanup and refactoring
 
-You came a long way , you started of by processing a CSV file, displaying the data on a browser using a web server.  You created a data model using MySQL. Then you hooked the data model up to your web application to create, delete, update and read data. Along the way you added a password and user roles. And not to forget the search support you added.
+You came a long way, you started of by processing a CSV file, displaying the data on a browser using a web server.  You created a data model using MySQL. Then you hooked the data model up to your web application to create, delete, update and read data. Along the way you added a password and user roles. And not to forget the search support you added.
 
 It's time now to stand back and review the code you wrote.
 

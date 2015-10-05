@@ -24,7 +24,7 @@ This is pretty standard Node code but yes it can soon become messy. Luckily ther
 
 ## Promises
 
-[Promises](https://www.promisejs.org/) makes callbacks easier to work with they are also make your code more [composable](./#).
+[Promises](https://www.promisejs.org/) makes callbacks easier to work with they are also make your code more [composable](http://stackoverflow.com/questions/2887013/what-does-composability-mean-in-context-of-functional-programming/2887024#2887024).
 
 `A promise represents the eventual result of an asynchronous operation.`
 

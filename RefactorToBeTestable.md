@@ -1,10 +1,8 @@
 # Testable code
 
-You need to do is to make sure that our code is tested. You cheated actually, but your focus was on learning how to get things done. How much of your code are actually tested? No much?!
+You need to make sure that your code is tested. Your focus was on learning how to get things done, so we cheated a little. How much of your code are actually tested? Not much? Let's fix that!
 
-Let's fix that! You will need to decouple your code to make it testable.
-
-Decoupled code have different logical components that is seperated out from each other.
+You will need to decouple your code to make it testable. Decoupled code has different logical components that are separated out from each other.
 
 Let's look at the code below:
 
@@ -31,13 +29,13 @@ Ask yourself:
 * How many reasons does this function have to change?
 * How can I write a unit test to test it?
 
-It's doing alot! And it is hard to test! This code will change for the database and if the front end changes. So it's concerned with both the back and front end.
+It's doing a lot, and it is hard to test! This code looks up things in the database, and shows something on the front-end depending on what the result is. It's concerned with both the back and front-end.
 
 ## Refactor it to be testable
 
-To make the code more testable we will need decouple the database code from the front end code.
+To make the code more testable we will need decouple the database code from the front-end code.
 
-Which parts are which, are really hard to determine at this stage!
+Which parts are which is really hard to determine at this stage!
 
 Let's start by creating testable database code to check if the query returns the right data.
 
@@ -51,7 +49,7 @@ module.exports = function(connection){
             if (products && products.length > 0){
                 return cb(null, products[0]);
             }
-            // to do do we want to return null!!
+            // to do: do we want to return null!
             cb(null, null);
         });
     }
@@ -60,15 +58,14 @@ module.exports = function(connection){
 
 Now we have a testable products database module.
 
-You can test it using [mocha](https://mochajs.org/) like his:
+You can test it using [mocha](https://mochajs.org/) like this:
 
 ```javascript
-
 var ProductsDataService = require('products-data-service');
 
 describe('test the ProductsDataService', function(){
-
-    var connection = //create connection to your mysql database
+    // Uncomment the line below and create a connection to your mysql database
+    // var connection =
 
     it('getProduct should return a specific product', function(done){
         var productsDataService = new ProductsDataService(connection);
@@ -78,6 +75,7 @@ describe('test the ProductsDataService', function(){
     });
 });
 ```
+
 Our initial piece of code can now be re-written as follows:
 
 ```javascript
@@ -100,15 +98,15 @@ exports.getProduct = function(req, res, next){
 };
 ```
 
-The code have less reason to change now, database related changes shouldn't affect it, only screen related changes.
+The code has less reason to change now. Database related changes shouldn't affect it, only screen related changes.
 
-**Now go ahead and refactor your Products module** and write some mocha tests for it.
+**Now go ahead and refactor your Products module** and write some Mocha tests for it.
 
 # Test database services with Travis
 
-Now that you have Mocha tests for your database code, setup a Travis instance for your project. You will need  database scripts that can create and populate your database every time Travis runs. This is a good practice and will ensure your database script and your database is syncronized.
+Now that you have Mocha tests for your database code, setup a Travis instance for your project. You will need  database scripts that can create and populate your database every time Travis runs. This is a good practice and will ensure your database script and your database is synchronised.
 
-Look at [example project](https://github.com/avermeulen/TravisWithDatabase) that use Travis with a database. Note the `.travis.yml` especially.
+Look at [this example project](https://github.com/avermeulen/TravisWithDatabase) that uses Travis with a database. Note the `.travis.yml` especially (.yml means that it's a [YAML](http://yaml.org/) file: a way of marking up metadata).
 
 
 ## Better database connections
@@ -139,13 +137,13 @@ exports.getProduct = function(req, res, next){
 };
 ```
 
-The code is decoupled from the database noew. There is a new method on the http request object instance `req` giving access to the productDataServices. The front end and the database concerns are now properly seperated out.
+The code is decoupled from the database now. There is a new method on the http request object instance `req` giving access to the `productDataServices`. The front-end and the database concerns are now properly separated out.
 
 To use this approach you need to install a module called `connection-provider` and configure it with your database details.
 
-Install it it like this: `npm install --save avermeulen/connection-provider`
+Install it like this: `npm install --save avermeulen/connection-provider`. This command adds [André's connection-provider](https://github.com/avermeulen/connection-provider) module to your project (by putting modules in your `node_modules` directory, and adding a line to your `package.json`).
 
-Configure it using in your server.js as follows:
+Configure it using in your `server.js` as follows:
 
 ```javascript
 var connectionProvider = require('connection-provider');
@@ -165,7 +163,7 @@ var dbOptions = {
 // create object instances that have a database connection
 var setupCallback = function(connection){
     return {
-        //this name match name exposed via the services object from req.services
+        //this name should match the name exposed via the services object from req.services
         productDataService : new ProductsDataService(connection)
         //add the other data services here
     }

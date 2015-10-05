@@ -22,7 +22,7 @@ Refactoring is the process of making your codebase better without changing its b
 
 * Adding modules for Categories, Products, Sales, Purchases, and Suppliers
 * Looking at your project web routes. Are they consistent? For example : `products/add`, `products/edit`, `products/update`, and `products/delete`. Whatever convention you are following, be consistent. Use lowercase for route names.
-* Ensure all `express` `get` and `post` handlers are in modules and you have no inline handles.
+* Ensure all `express` `get` and `post` handlers are in modules and you have no inline function calls.
 
 This is bad:
 
@@ -40,28 +40,8 @@ app.get('/products', products.showProducts);
 
 ## Next steps
 
-The next thing is to check if your [code is testable](./RefactorToBeTestable.md).
+Make sure your [code is testable](./RefactorToBeTestable.md).
 
 Then look at Promises for [a better way to handle callbacks](./Promises.md).
 
-## Refactor your database modules to use Promises
-
-A simple wrapper around the mysql code like this will suffice:
-
-```javascript
-var QueryBuilder = function(connection){
-    this.execute = function(sql, params){
-        return new Promise(resolve, reject){
-            connection.query(sql, params, function(){
-                connection.query(sql, params, function(err, results){
-                    if(err) return reject(err);
-                    resolve(results);
-                });
-            });
-        };
-    }
-}
-```
-
-How would you use this class?
-How would you handle nested database queries now?
+Refactor your [database modules to use Promises](./RefactorDatabaseModulesToUsePromises.md)

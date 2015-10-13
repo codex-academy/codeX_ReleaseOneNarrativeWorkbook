@@ -6,7 +6,7 @@ Code Reviews are an important part of your skillset. It's a way of getting feedb
 
 Doing Code Reviews help you make your code readable and understandable, and more robust and maintainable.
 
-It will also help you see different approaches to a problem, learn new tricks from other devlopers, and help you share knowledge.
+It will also help you see different approaches to a problem, learn new tricks from other developers, and help you share knowledge.
 
 # How?
 

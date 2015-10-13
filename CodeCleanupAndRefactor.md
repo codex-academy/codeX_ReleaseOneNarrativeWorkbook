@@ -14,6 +14,8 @@ Any monolithic pieces of code (i.e. big pieces that do a lot of things)? Or, eve
 
 If that is the case the first thing to do would be to split up your code up into smaller parts. Split up your code into modules that handle specific domains like products, sales, and categories. Decouple your code into logical components. This makes makes system maintenance much easier, and your code easier to understand.
 
+One great way to improve your code is to do a Code Review with a partner. [Read more about CodeReviews](CodeReview.md) to learn more about how to do them, then find someone to sit with and review each other's code.
+
 ## Refactor
 
 Refactoring is the process of making your codebase better without changing its behaviour. It improves the way your code is written and it improves the structure. Refactoring makes it easier for future you and others to maintain and extend your code.

@@ -37,11 +37,13 @@ They have [very good tutorials](https://www.digitalocean.com/community/tutorials
 
 Here are some tutorials you will need to setup a server to run NodeJS, Nginx and Mysql:
 
-* [Simple instructions to install a Node on Digital Ocean](./NodeServerOnDigitalOcean.md) after you've done this you can follow the instructions below. skpi the part on installing node from source. 
-* [How To Set Up a Node.js Application for Production on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04)
-* [How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04)
+* Folow these [instructions to install a Node server with MySQL and Nginx on Digital Ocean](./NodeServerOnDigitalOcean.md)
 
-You will need to follow some of these tutorials piecemeal as we are not using Apache as a web server or going to setup PhpMyAdmin on the VPS.
+The instructions above is a selection from these two articles:
+  * [How To Set Up a Node.js Application for Production on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04) This article use two servers for the setup. We are only using one server for now.
+  * [How To Install Linux, Apache, MySQL, PHP (LAMP) stack on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-14-04)
+
+  You will need to follow some of these tutorials piecemeal as we are not using Apache as a web server or going to setup PhpMyAdmin on the VPS.
 
 #### Afrihost
 

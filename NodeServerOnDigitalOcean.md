@@ -8,7 +8,9 @@ Login to it using root and then execute
 
 ## Setup the server
 
-[First do this](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+First setup your server by following these [instructions](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+
+
 Decide in one a DNS name for your server: `<server_name>.projectcodex.co` then email it with your servers IP address to your Tech Mentor to link it to the domain name to the IP address.
 
 ##Now install node :

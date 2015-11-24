@@ -1,8 +1,16 @@
 # Setup Ubuntu, Node JS server with MySQL
 
-Create a new Ubuntu server on Digital Ocean
+Create a new Ubuntu server on Digital Ocean. Be sure that your Code Menter sent you an email invitation to Digital Ocean.
 
-Login to it using root and then execute
+## Login
+
+Once you have a server login to it using [ssh](https://en.wikipedia.org/wiki/Secure_Shell)
+
+In a terminal login to your remote server using ssh:
+
+`ssh root@<your ip address>`
+
+You will be prompted for a password - use the password that Digital Ocean emailed you. You will also need to change your root password. Follow the prompts to change the password. 
 
 `apt-get update`
 

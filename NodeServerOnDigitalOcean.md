@@ -1,6 +1,6 @@
 # Setup Ubuntu, Node JS server with MySQL
 
-Create a new Ubuntu server on Digital Ocean. Be sure that your Code Menter sent you an email invitation to Digital Ocean.
+Create a new Ubuntu server on Digital Ocean. Be sure that your Code Mentor sent you an email invitation to Digital Ocean.
 
 ## Login
 

@@ -29,8 +29,7 @@ Decide in one a DNS name for your server: `<server_name>.projectcodex.co` then e
 
 ## Create sample application online
 
-Now follow this article from [Create Node.js Application
- ](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04) downwards.
+Now follow [this article, from Hello World Code](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04#hello-world-code) downwards.
 
 ## Setup mysql
 

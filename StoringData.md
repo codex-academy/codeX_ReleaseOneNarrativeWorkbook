@@ -9,5 +9,3 @@ To capture data on a web page one needs an HTML form with fields to allow data t
 [Server side variables](serverside_variables.md)
 
 [Routes](routes.md)
-
-## Database

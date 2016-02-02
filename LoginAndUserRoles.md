@@ -9,6 +9,7 @@ The process goes something like this, a user is identified as they log into the 
 ## The details
 
 [Http Sessions](http_sessions.md)
+
 [Middleware](middleware.md)
 
 To support login for the `/users` route above you would need to put a user Object in the session. For logout you will need to remove the user Object from the session using the `delete` statement.
